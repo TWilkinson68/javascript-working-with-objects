@@ -6,17 +6,17 @@ document.getElementById('digitalClock').appendChild(myNode);
 myNode.innerHTML ="welcome!"
 
 
-// console.dir(myDate);
 var updateTime = function(){
     var myDate = new Date ();
-    myNode.innerHTML = myDate.toLocaleTimeString();
+    myNode.innerHTML = myDate.toTimeString(). substring(0,8);
 }
 setInterval(updateTime, 1000);
+updateTime();
 
 
-myNode.innerHTML = myDate.toTimeString().substr(0, 8);
-upDateTime();
-setInterval(updateTime, 1000);
+// myNode.innerHTML = myDate.toTimeString().substr(0, 8);
+// upDateTime();
+// setInterval(updateTime, 1000);
 
 
 // var myDate = new Date();
