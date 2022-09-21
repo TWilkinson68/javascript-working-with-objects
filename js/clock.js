@@ -12,7 +12,7 @@ var updateTime = function(){
     let seconds = myDate.getSeconds();
     let minutes = myDate.getMinutes();
     let hours = myDate.getHours();
-    hours = hours + minutes/60;
+    hours += minutes/60;
     let rotSeconds = (seconds * 6) - 90;
     let rotMinutes = (minutes * 6) - 90;
     let rotHours = (hours * 30) - 90;
@@ -30,7 +30,7 @@ document.getElementById('hrHand').style.backgroundColor = '#0f0';
 
 
 
-S
+
 // document.getElementById("secondHand").style.transform = 'rotate('+rotSeconds+'deg)';
 
 
